@@ -18,7 +18,7 @@ def on_loaded(window):
         window.load_html('<h1>Failed to load the page. Please check your connection or try again later.</h1>')
 
 if __name__ == '__main__':
-    window = webview.create_window('My Web App')
+    window = webview.create_window('Salam')
     threading.Thread(target=load_page, args=(window,)).start()
     threading.Thread(target=on_loaded, args=(window,)).start()
     webview.start()
