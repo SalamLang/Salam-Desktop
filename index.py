@@ -3,7 +3,7 @@ import threading
 
 def load_page(window):
     try:
-        window.load_url('https://soft98.ir')
+        window.load_url('https://editor.salamlang.ir')
     except Exception as e:
         window.load_html(f'<h1>Error: {str(e)}</h1>')
 
