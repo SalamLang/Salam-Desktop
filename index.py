@@ -1,11 +1,13 @@
 import webview
 import threading
 
+
 def load_page(window):
     try:
         window.load_url('https://editor.salamlang.ir')
     except Exception as e:
         window.load_html(f'<h1>Error: {str(e)}</h1>')
+
 
 def on_loaded(window):
     try:
@@ -16,6 +18,7 @@ def on_loaded(window):
                 break
     except Exception:
         window.load_html('<h1>Failed to load the page. Please check your connection or try again later.</h1>')
+
 
 if __name__ == '__main__':
     window = webview.create_window('Salam')
