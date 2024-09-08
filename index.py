@@ -1,10 +1,13 @@
 import webview
 import threading
 
+SALAM_EDITOR_URL = 'https://editor.salamlang.ir'
 
 def load_page(window):
+    global SALAM_EDITOR_URL
+    
     try:
-        window.load_url('https://editor.salamlang.ir')
+        window.load_url(SALAM_EDITOR_URL)
     except Exception as e:
         window.load_html(f'<h1>Error: {str(e)}</h1>')
 
