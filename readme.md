@@ -3,7 +3,7 @@
 Build:
 
 ```
-pip3 install pyinstaller
+pip install -r requirements.txt
 pyinstaller --noconsole --onefile --icon=salam.ico index.py
 ```
 
