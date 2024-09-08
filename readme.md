@@ -1,1 +1,1 @@
-pyinstaller --noconsole --onefile --icon=myicon.ico index.py
+pyinstaller --noconsole --onefile --icon=salam.ico index.py
